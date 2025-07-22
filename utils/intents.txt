@@ -1,0 +1,13 @@
+Account Information Intents
+    - check account balance
+    - view recent transactions
+    - account details inquiry
+Loan Information Intents
+    - check loan status
+    - loan tenure enquiry
+    - monthly EMI details
+Credit Information Intents
+    - credit score inquiry
+Transaction based Intents
+    - last transactions inquiry
+    - salary deposit inquiry

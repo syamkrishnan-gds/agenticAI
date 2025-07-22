@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>ImaGen-AI</title>
+    <link rel="icon" type="image/x-icon" href="static/assets/img/favicon.ico">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="static/assets/img/favicon.png" rel="icon">
+    <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="static/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header class="header d-flex align-items-center fixed-top" id="header">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a class="logo d-flex align-items-center" href="index.html">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="static/assets/img/logo.png" alt=""> -->
+            <img src="static/assets/img/hero-img-trans.png" alt="Icon" style="width: 30px; height: 30px;">
+            <h1>QE<i>i</i>Bot</h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <!---->
+
+    </div>
+</header><!-- End Header -->
+<!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section class="hero d-flex align-items-center" id="hero">
+    <div class="container">
+        <div class="row gy-4 d-flex justify-content-between">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <p data-aos="fade-up" data-aos-delay="100">Sure! Happy to help you. here are some sample URL's to test the application.</p>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <span class="copyable-link" data-link="https://upload.wikimedia.org/wikipedia/commons/f/f6/JobRunr_Dashboard_Overview_Screenshot.webp">
+                    Valid Image URL :  https://upload.wikimedia.org/wikipedia/commons/f/f6/JobRunr_Dashboard_Overview_Screenshot.webp
+                    </span>
+                    <button onclick="copyUrlToClipboard(event)">
+                        <i class="fas fa-copy"></i> Copy Link
+                    </button>
+                    <br>
+                    <span class="copyable-link" data-link="https://upload.wikimedia.org/wikipedia/commons/2/2a/Zabbix_4.0_web_UI_c.png">
+                    Valid Image URL :  https://upload.wikimedia.org/wikipedia/commons/2/2a/Zabbix_4.0_web_UI_c.png
+                    </span>
+                    <button onclick="copyUrlToClipboard(event)">
+                        <i class="fas fa-copy"></i> Copy Link
+                    </button>
+                </p>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <span class="copyable-link" data-link="https://upload.wikimedia.org/wikipedia/commons/4/4d/Screenshot_of_Soap2day.png">
+                            Invalid Image URL :  https://upload.wikimedia.org/wikipedia/commons/4/4d/Screenshot_of_Soap2day.png
+                    </span>
+                    <button onclick="copyUrlToClipboard(event)">
+                        <i class="fas fa-copy"></i> Copy Link
+                    </button>
+                </p>
+
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <span class="copyable-link" data-link="https://upload.wikimedia.org/wikipedia/commons/2/2e/Limbas_CRM_Screenshot.png">
+                    Non English Image URL :  https://upload.wikimedia.org/wikipedia/commons/2/2e/Limbas_CRM_Screenshot.png
+                    </span>
+                    <button onclick="copyUrlToClipboard(event)">
+                        <i class="fas fa-copy"></i> Copy Link
+                    </button>
+                </p>
+            </div>
+
+            <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+                <img alt="" class="img-fluid mb-3 mb-lg-0" src="static/assets/img/hero-img-trans.png">
+            </div>
+        </div>
+    </div>
+</section><!-- End Hero Section -->
+<footer style="background-color: #203f6f; color: #e6e6dd; text-align: center; padding: 10px;">
+    <p style="margin:0;font-size:12px;font-family:verdana">Disclaimer : <b><i>Ima</i>Gen-AI</b> is powered by OpenAI.
+        AI-driven test case generation may yield varied results; kindly review and validate the generated test cases for thorough coverage.</p>
+</footer>
+
+<!-- ======= Footer ======= -->
+<!-- <footer class="footer" id="footer">
+</footer>End Footer -->
+<!-- End Footer -->
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="static/assets/vendor/aos/aos.js"></script>
+<script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/assets/js/main.js"></script>
+<script>
+        function copyUrlToClipboard(event) {
+            // Get the clicked button
+            const clickedButton = event.currentTarget;
+
+            // Find the closest ancestor with the class "copyable-link"
+            const copyableLink = clickedButton.parentElement.querySelector('.copyable-link');
+
+            if (copyableLink) {
+                // Get the data-link attribute value
+                const textToCopy = copyableLink.getAttribute('data-link');
+
+                // Create a temporary input element
+                const inputElement = document.createElement('input');
+                inputElement.value = textToCopy;
+
+                // Append the input element to the document
+                document.body.appendChild(inputElement);
+
+                // Select the text inside the input element
+                inputElement.select();
+
+                // Execute the "copy" command
+                document.execCommand('copy');
+
+                // Remove the temporary input element
+                document.body.removeChild(inputElement);
+
+                // Provide some visual feedback (optional)
+                alert('Link copied to clipboard: ' + textToCopy);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

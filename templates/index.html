@@ -1,0 +1,184 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>QEiAgent</title>
+    <link rel="icon" type="image/x-icon" href="static/assets/img/favicon.ico">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="static/assets/img/favicon.png" rel="icon">
+    <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="static/assets/css/main.css" rel="stylesheet">
+
+    <!-- Custom CSS for Sticky Footer -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+        }
+        footer {
+            background-color: #203f6f;
+            color: #e6e6dd;
+            text-align: center;
+            position: fixed;
+            padding: 10px;
+            bottom:0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header class="header d-flex align-items-center fixed-top" id="header">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a class="logo d-flex align-items-center" href="index.html">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="static/assets/img/logo.png" alt=""> -->
+                <img src="static/assets/img/hero-img-trans.png" alt="Icon" style="width: 30px; height: 30px;">
+                <h1>QEiAgent</h1>
+            </a>
+
+            <!--<i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>-->
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            <!---->
+
+        </div>
+    </header><!-- End Header -->
+    <!-- End Header -->
+
+    <div class="content">
+        <!-- Loader Starts -->
+        <div class="center-spinner" id="loading" style="display: none;">
+            <div class="center">
+                <img src="{{url_for('static',filename = '/img/loader.gif')}}" width="75" height="75" alt="Loading" class="spinner"/>
+            </div>
+        </div>
+        <!-- Loader Ends -->
+
+        <!-- ======= Hero Section ======= -->
+        <section class="hero d-flex align-items-center" id="hero">
+            <div class="container">
+                <div class="row gy-4 d-flex justify-content-between">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                        <p data-aos="fade-up" data-aos-delay="100">⚡<b>Test Smarter. Chat Better. Elevate Conversations.</b>⚡</p>
+
+                        <p data-aos="fade-up" data-aos-delay="100">Say goodbye to manual chatbot testing and embrace the Agentic AI-driven test automation with <b>QEiAgent</b>.</p>
+
+                        <p data-aos="fade-up" data-aos-delay="100">From generating utterances to reviewing them, validating responses and generating test report, our specialized AI Agents do more than just test; they also review chatbot interactions, detects flaws and suggests actionable improvements. Simply input your intent and watch as AI Agents handle the entire testing lifecycle.</p>
+
+                        <form method="post" enctype="multipart/form-data" action="/start_agents" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+                            <input class="form-control" placeholder="Enter the INTENT here" type="text" name="userText" id="userText">
+                            <button class="btn btn-primary" type="submit" onclick="$('#loading').show();">Submit</button>
+                        </form>
+                        <p style="font-size: small;"><i>Please provide INTENT only; refrain from including Utterances, User Stories or Scenarios.</i></p>
+                        <p data-aos="fade-up" data-aos-delay="10" style="margin:0;font-size:12px;font-family:verdana">Please enter INTENT only; refrain from including Utterances, User Stories or Scenarios.</p>
+                        <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+                            <!--
+                            <div class="col-lg-3 col-6">
+                                <div class="stats-item text-center w-100 h-100">
+                                    <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="20320" data-purecounter-start="0"></span>
+                                    <p>Total TC's Generated</p>
+                                </div>
+                            </div>End Stats Item
+                            -->
+
+                            <!--
+                            <div class="col-lg-3 col-6">
+                                <div class="stats-item text-center w-100 h-100">
+                                    <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="10750" data-purecounter-start="0"></span>
+                                    <p>Functional Testcases</p>
+                                </div>
+                            </div>
+                            -->
+
+                            <!--
+                            <div class="col-lg-3 col-6">
+                                <div class="stats-item text-center w-100 h-100">
+                                    <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="3045" data-purecounter-start="0"></span>
+                                    <p>UI Testcases</p>
+                                </div>
+                            </div>
+                            -->
+
+                            <!--
+                            <div class="col-lg-3 col-6">
+                                <div class="stats-item text-center w-100 h-100">
+                                    <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="2025" data-purecounter-start="0"></span>
+                                    <p>Edge Testcases</p>
+                                </div>
+                            </div>
+                            -->
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+                        <img alt="" class="img-fluid mb-3 mb-lg-0" src="static/assets/img/slider-img.png">
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Hero Section -->
+    </div>
+
+    <footer>
+        <p style="margin:0;font-size:12px;font-family:verdana"><b>QEiAgent</b> is developed by <u>Arun Sivaraj A P</u> for evaluating Agentic AI Frameworks.</p>
+    </footer>
+
+    <!-- ======= Footer ======= -->
+    <!-- <footer class="footer" id="footer">
+    </footer>End Footer -->
+    <!-- End Footer -->
+    <!-- JavaScript to hide the loader when going back in the browser history -->
+    <script>
+        // Function to hide the loader
+        function hideLoader() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        // Check if the user navigates back
+        window.onpopstate = function (event) {
+            // If the user goes back, hide the loader
+            hideLoader();
+        };
+    </script>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="static/assets/vendor/aos/aos.js"></script>
+    <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="static/assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+Flask
+requests
+autogen-agentchat
+autogen-ext[azure]
+autogen-core
+python-dotenv
+azure-identity
+tiktoken
+openai
+rich
+azure-search-documents
